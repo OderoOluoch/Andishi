@@ -15,32 +15,20 @@
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
         />
-    <TextView
+    <ImageView
         android:layout_width="wrap_content"
+        android:id="@+id/andishiLogo"
         android:layout_height="wrap_content"
-        android:text="Andishi"
-        android:textSize="50dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:fontFamily="cursive"
+        android:layout_marginTop="100dp"
         android:visibility="gone"
-        android:textColor="@color/red"
-        android:id="@+id/txtAndishi"/>
+        android:src="@drawable/logo"
+        />
+
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Africa"
-        android:textSize="30dp"
-        android:textColor="@color/red"
-        android:gravity="center"
-        android:fontFamily="sans-serif-medium"
-        android:layout_marginTop="100dp"
-        android:visibility="gone"
-        android:layout_marginLeft="80dp"
-        android:id="@+id/txtAfrica" />
-    <TextView
-        android:layout_width="match_parent"
+        android:padding="15dp"
         android:layout_height="wrap_content"
         android:text="The leading Pan African Literature outlet. Carrying the African voice all over the world."
         android:textSize="20dp"

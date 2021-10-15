@@ -8,11 +8,13 @@ import android.os.Handler;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    TextView txtAndishi,txtAfrica;
+
+    ImageView andishiLogo;
     RelativeLayout relativeLayout;
     Animation txtAnimation, layoutAnimation;
 
@@ -25,9 +27,7 @@ public class MainActivity extends AppCompatActivity {
         txtAnimation = AnimationUtils.loadAnimation(MainActivity.this, R.anim.fall_down);
         layoutAnimation = AnimationUtils.loadAnimation(MainActivity.this, R.anim.bottom_to_top);
 
-
-        txtAndishi = findViewById(R.id.txtAndishi);
-        txtAfrica = findViewById(R.id.txtAfrica);
+        andishiLogo = findViewById(R.id.andishiLogo);
         relativeLayout = findViewById(R.id.relMain);
 
         new Handler().postDelayed(new Runnable() {
@@ -39,15 +39,12 @@ public class MainActivity extends AppCompatActivity {
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        txtAndishi.setVisibility(View.VISIBLE);
-                        txtAfrica.setVisibility(View.VISIBLE);
-
-                        txtAndishi.setAnimation(txtAnimation);
-                        txtAfrica.setAnimation(txtAnimation);
+                        andishiLogo.setVisibility(View.VISIBLE);
+                        andishiLogo.setAnimation(txtAnimation);
                     }
-                },4000);
+                },800);
             }
-        }, 1000);
+        }, 900);
 
         new Handler().postDelayed(new Runnable() {
             @Override
@@ -55,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, Welcome.class);
                 startActivity(intent);
             }
-        },8000);
+        },9000);
 
     }
 }
