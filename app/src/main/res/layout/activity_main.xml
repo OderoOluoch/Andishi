@@ -20,7 +20,7 @@
         android:id="@+id/andishiLogo"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="50dp"
         android:visibility="gone"
         android:src="@drawable/logo"
         />
@@ -28,14 +28,14 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:padding="15dp"
+        android:padding="20dp"
         android:layout_height="wrap_content"
         android:text="The leading Pan African Literature outlet. Carrying the African voice all over the world."
         android:textSize="20dp"
         android:textColor="@color/black"
         android:layout_alignParentBottom="true"
         android:gravity="center"
-        android:layout_marginBottom="40dp"/>
+        android:layout_marginBottom="60dp"/>
 
 
 
